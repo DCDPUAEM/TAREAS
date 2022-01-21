@@ -5,3 +5,5 @@
 * Este repostorio tiene permisos de escritura, por lo que los participantes se compromenten a hacer buen uso del mismo, con esmero y cuidado.
 * En caso de que un participante borre el contenido de su rama y no pueda recuperarlo, deberá reportarlo de inmediato al instructor en turno.
 * Conjuntamente, instructor y participante llegarán a un acuerdo para solventar el incidente.
+
+Esto es una prueba para ver como se puede agregar algo al final
