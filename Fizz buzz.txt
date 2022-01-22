@@ -1,0 +1,27 @@
+#EJERCICIO FIZZ BUZZ
+
+print("Ingresa el rango separado por un guión: ")
+dato = input();
+if(len(dato) > 0):
+  dato = dato.split("-")
+  print(dato)
+  inicio = int(dato[0])
+  fin = int(dato[1])
+  if(inicio >= fin):
+    print("El primer valor debe ser menor al segundo.")
+  else :
+    print("Iniciando fizz buzz")
+    lista_texto = []
+    while(inicio <= fin):
+      if(inicio % 3 == 0 and inicio % 5 == 0):
+        lista_texto.append("Fizz Buzz")
+      elif(inicio % 5 == 0):
+        lista_texto.append("Buzz")
+      elif(inicio % 3 == 0):
+        lista_texto.append("Fizz")
+      else:
+        lista_texto.append(str(inicio))
+      inicio+=1
+    resultado = ", ".join(lista_texto)
+    print(resultado)
+print("Finalizado.")
