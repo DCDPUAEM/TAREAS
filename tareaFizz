@@ -1,0 +1,28 @@
+# EJERCICIO FIZZ BUZZ
+print('Imprimiendo la salida...\n')
+# TU CODIGO AQUI
+otra_n = n
+
+while otra_n<=m:
+    if otra_n%3 == 0:
+        print('Fizz',end=' ')
+    if otra_n%5 == 0:
+        print('Buzz',end=' ')
+    else:
+        print(otra_n, end= ' ')    
+    otra_n += 1
+
+print('\n')
+secuencia = range(n,m+1)
+for i in secuencia:
+    if i%3 == 0:
+        print('Fizz',end=' ')
+    if i%5 == 0:
+        print('Buzz',end=' ')
+    else:
+        print(i, end= ' ')
+        Imprimiendo la salida...
+
+13 14 Fizz Buzz 16 17 Fizz 18 19 
+
+13 14 Fizz Buzz 16 17 Fizz 18 19 
