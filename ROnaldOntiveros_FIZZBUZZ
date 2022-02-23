@@ -1,0 +1,54 @@
+Ejercicio Fizz Buzz
+Fizz buzz es un juego de palabras grupal para enseñar a los niños la división [1]. Los jugadores se turnan para contar de forma incremental, reemplazando cualquier número divisible por tres con la palabra "Fizz" y cualquier número divisible por cinco con la palabra "Buzz".
+
+Un ejemplo del juego sería el siguiente:
+
+1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
+
+Escribe un programa en Python que dados dos números de inicio y fin de una secuencia, recorra la secuencia y escriba el número o la cadena "Fizz", "Buzz" correspondiente.
+Por ejemplo. Si los números de entrada son 13 y 19, el programa deberá escribir:
+
+13, 14, Fizz Buzz,16,17,Fizz,19
+
+# LECTURA DE DATOS DE ENTRADA
+Ok = False
+it=1
+while Ok == False and it<=3:
+    print('Dame dos números separados por un espacio: ')
+    datos=input()
+
+    #OBTEN el primer dato de la secuencia
+    una_lista = datos.split()
+    un_elemento = una_lista[0]
+    n = int(un_elemento)
+    print('n = ',n)
+
+    #OBTEN el segundo número en una sola línea de instrucción
+    m = int(una_lista[1]) #CAMBIA (REESCRIBE) ESTA LINEA
+    print('m = ',m)
+
+    if m>n:
+        print('La secuencia es de {0} hasta {1}.'.format(n,m))
+        Ok = True
+    else:
+        print('El valor de "m" debe ser mayor al valor de "n"...')
+        it+=1
+Dame dos números separados por un espacio: 
+2 26
+n =  2
+m =  26
+La secuencia es de 2 hasta 26.
+# EJERCICIO FIZZ BUZZ
+salida = []
+for i in range(n,m):
+  if i%3 == 0:
+    if i%5 == 0:
+      salida.append('Fizz-Buzz')
+    else:
+      salida.append('Fizz')
+  elif i%5 == 0:
+    salida.append('Buzz')
+  else:
+    salida.append(str(i))
+print(", ".join(salida))
+2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz-Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz
