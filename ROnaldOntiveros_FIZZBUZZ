@@ -35,9 +35,9 @@ while Ok == False and it<=3:
         it+=1
 Dame dos números separados por un espacio: 
 2 26
-n =  2
-m =  26
-La secuencia es de 2 hasta 26.
+n =  12
+m =  38
+La secuencia es de 12 hasta 38.
 # EJERCICIO FIZZ BUZZ
 salida = []
 for i in range(n,m):
@@ -51,4 +51,4 @@ for i in range(n,m):
   else:
     salida.append(str(i))
 print(", ".join(salida))
-2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz-Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz
+Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, 27, 28, 29, Buzz, 31, 32, Fizz, 34, Buzz, Fizz, 37, 38
